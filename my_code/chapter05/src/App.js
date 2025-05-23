@@ -13,8 +13,8 @@ class App extends Component {
         <JumboTronComponent>
           <Test />
           {/* <WelcomeMessage/> */}
-        This is a simple hero unit, a simple jumbotron-style component for
-        calling extra attention to featured content or information.
+        {/* This is a simple hero unit, a simple jumbotron-style component for
+        calling extra attention to featured content or information. */}
         </JumboTronComponent>
       </div>
     );
