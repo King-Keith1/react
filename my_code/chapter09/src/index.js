@@ -10,7 +10,13 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-  //firebase config values
+  apiKey: "AIzaSyAQhrILPB_M1Ww3jE44OUOuozJjeGVEAnc",
+    authDomain: "codereactcolledge.firebaseapp.com",
+    projectId: "codereactcolledge",
+    storageBucket: "codereactcolledge.firebasestorage.app",
+    messagingSenderId: "307229310614",
+    appId: "1:307229310614:web:3e73ce90f5aec3ca4eccb7",
+    measurementId: "G-TS0YF9PWWV"
 };
 
 firebase.initializeApp(firebaseConfig);

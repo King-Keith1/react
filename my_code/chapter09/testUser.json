@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Cadee Rousseau",
+        "username": "CadeeR",
+        "email": "codee.withcadee@byte.com"
+    },
+    {
+        "id": 2,
+        "name": "Courtney Cook",
+        "username": "CourtneyC",
+        "email": "courtsey_of_courtney@funmail.io"
+    },
+    {
+        "id": 3,
+        "name": "David Keon",
+        "username": "DavidK",
+        "email": "teachinator.david@brainboost.edu"
+    },
+    {
+        "id": 4,
+        "name": "Ethan Hurwitz",
+        "username": "EthanH",
+        "email": "ethanator@hackmail.com"
+    },
+    {
+        "id": 5,
+        "name": "Lindokuhle Yende",
+        "username": "LindokuhleY",
+        "email": "lindo.logic@neuralhub.org"
+    },
+    {
+        "id": 6,
+        "name": "Marvelous Kahundahunda",
+        "username": "MarvelousK",
+        "email": "absolutely.marvelous@wow.com"
+    },
+    { 
+        "id": 7,
+        "name": "Mieke Pienaar",
+        "username": "MiekeP",
+        "email": "mieke.moves@moonbase.dev"
+    },
+    {
+        "id": 8,
+        "name": "Pierre Kahunda",
+        "username": "PierreKB",
+        "email": "pierrefect.code@bonjour.dev"
+    },
+    {
+        "id": 9,
+        "name": "Ronny Mputla",
+        "username": "RonnyM",
+        "email": "run.run.ronny@speedmail.net"
+    },
+    {
+        "id": 10,
+        "name": "Sibusiso Makhiwane",
+        "username": "SibusisoM",
+        "email": "sibu.saves@galaxymail.com"
+    },
+    {
+        "id": 11,
+        "name": "Tom Vuma",
+        "username": "TomV",
+        "email": "tom.tornado@scriptstorm.dev"
+    },
+    {
+        "id": 12,
+        "name": "Ulrich Snyman",
+        "username": "UlrichS",
+        "email": "ultimatecoding@master.com"
+    }
+]
