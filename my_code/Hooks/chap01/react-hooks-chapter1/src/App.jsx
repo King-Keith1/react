@@ -1,11 +1,13 @@
 import React from 'react'
+import Greeting from './Greeting';
 
 function App() {
   return (
     <div>
-      <h1>Learn React Hooks</h1>
+      <h1>Hello, React!</h1>
+      <Greeting />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
