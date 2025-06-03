@@ -7,8 +7,8 @@ function formatName(user) {
 
 function App() {
   const user = {
-    firstName: 'Greg',
-    lastName: 'Tan',
+    firstName: 'Pierre',
+    lastName: 'Kahunda',
     imageUrl:'https://picsum.photos/200/300'
   }
 
