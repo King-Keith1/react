@@ -8,7 +8,7 @@ function Characters({ searchTerm }) {
     useEffect(() => {
         setLoading(true);
 
-        axios.get("https://swapi.py4e.com/api/people/?search=luke")
+        axios.get("https://swapi.py4e.com/api/people/?search=" + searchTerm)
             .then(res => console.log(res.data.results))
                .catch(err => console.error(err));
     }, [searchTerm]); // fixed: added missing comma
