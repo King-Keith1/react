@@ -8,15 +8,9 @@ function Characters({ searchTerm }) {
     useEffect(() => {
         setLoading(true);
 
-        axios.get(`https://swapi.py4e.com/api/people/?search=${searchTerm}`) // fixed: added backticks
-            .then((res) => {
-                setData(res.data.results);
-                setLoading(false);
-            })
-            .catch((err) => {
-                console.error("API Error:", err.message);
-                setLoading(false);
-            });
+        axios.get("https://swapi.py4e.com/api/people/?search=luke")
+            .then(res => console.log(res.data.results))
+               .catch(err => console.error(err));
     }, [searchTerm]); // fixed: added missing comma
 
     if (loading) return <div>Loading...</div>;
