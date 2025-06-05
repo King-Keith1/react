@@ -1,39 +1,47 @@
-import React, { use, Suspense, useEffect, useState } from 'react'
-import axios from 'axios' // npm install axios
+import React, { useEffect, useState } from 'react';
+import axios from 'axios'; // Ensure axios is installed
 
-function fetchData(searchTerm) {
-    return new Promise((resolve, reject) => {
-        axios.get(`https://swapi.dev/api/people/?search=${searchTerm}`)
-            .then((res) => {
-                console.log(res.data.results)
-                resolve(res.data.results)
-            })
-    })
-}
-
-const Characters = ({ fetchDataPromise }) => {
-    const [data, setData] = useState([])
+function Characters({ searchTerm }) {
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetchDataPromise.then((data) => {
-            setData(data)
-        })
-    }, [])
+        setLoading(true);
+        axios.get(`https://swapi.dev/api/people/?search=${searchTerm}`)
+            .then((res) => {
+                setData(res.data.results);
+                setLoading(false);
+            })
+            .catch((err) => {
+                console.error(err);
+                setLoading(false);
+            });
+    }, [searchTerm]); // re-run when searchTerm changes
+
+    if (loading) return <div>Loading...</div>;
 
     return (
         <div>
-        {data.map((item) => {
-            return <div key={item.name}>{item.name}</div>
-        })}
+            {data.length > 0 ? (
+                data.map((item) => (
+                    <div key={item.name}>{item.name}</div>
+                ))
+            ) : (
+                <div>No results found.</div>
+            )}
         </div>
-    )
+    );
 }
 
 function StarWars() {
-    const [searchTerm, setSearchTerm] = useState("luke")
+    const [searchTerm, setSearchTerm] = useState("luke");
+
     return (
-        <Characters fetchDataPromise={fetchData(searchTerm)} />
-    )
+        <div>
+            <h2>Star Wars Characters</h2>
+            <Characters searchTerm={searchTerm} />
+        </div>
+    );
 }
 
-export default StarWars
+export default StarWars;
